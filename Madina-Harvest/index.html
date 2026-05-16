@@ -1,1 +1,1129 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Madina Harvest - Natural Quail Eggs, Birds, Chicken, and Organic Products from Trishal, Mymensingh, Bangladesh">
+    <meta name="keywords" content="quail eggs, quail birds, desi chicken, organic mustard oil, Bangladesh farm, Trishal, Mymensingh">
+    <meta name="author" content="Madina Harvest">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Madina Harvest - Natural Farm Products">
+    <meta property="og:description" content="Fresh quail eggs, birds, desi chicken & organic mustard oil from Trishal, Mymensingh">
+    <meta property="og:type" content="website">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-src https://www.google.com;">
+    <title>Madina Harvest - Natural Farm Products</title>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        
+:root {
+    --primary: #1e5631;
+    --primary-dark: #143d22;
+    --primary-light: #2a7a4a;
+    --accent: #c68642;
+    --accent-dark: #a06530;
+    --bg: #faf8f5;
+    --bg-dark: #f0ece6;
+    --text: #1a1a1a;
+    --text-light: #5c5c5c;
+    --white: #ffffff;
+    --shadow: 0 8px 32px rgba(30,86,49,0.08);
+    --shadow-lg: 0 20px 60px rgba(30,86,49,0.12);
+    --radius: 20px;
+    --radius-sm: 12px;
+    --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+    font-family: 'Poppins', 'Noto Sans Bengali', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    transition: var(--transition);
+}
+header.scrolled { box-shadow: var(--shadow); }
+.header-container {
+    max-width: 1280px; margin: 0 auto; padding: 0 32px;
+    display: flex; align-items: center; justify-content: space-between; height: 76px;
+}
+.logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.logo-icon {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius: 14px; display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 22px; box-shadow: 0 4px 16px rgba(30,86,49,0.25);
+}
+.logo-text { font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); letter-spacing: -0.5px; }
+.logo-text span { color: var(--accent); }
+nav { display: flex; align-items: center; gap: 32px; }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+    text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem;
+    position: relative; padding: 4px 0; transition: var(--transition);
+}
+.nav-links a::after {
+    content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2.5px;
+    background: var(--accent); transition: var(--transition); border-radius: 2px;
+}
+.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+.nav-links a:hover { color: var(--primary); }
+.lang-toggle {
+    display: flex; align-items: center; gap: 8px; background: var(--bg-dark);
+    padding: 8px 16px; border-radius: 24px; cursor: pointer; border: 2px solid transparent;
+    transition: var(--transition); font-weight: 600; font-size: 0.85rem;
+}
+.lang-toggle:hover { border-color: var(--primary-light); background: var(--white); }
+.lang-toggle i { color: var(--primary); }
+.mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; color: var(--primary-dark); cursor: pointer; }
+footer { background: var(--primary-dark); color: white; padding: 70px 24px 30px; }
+.footer-container { max-width: 1280px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer-brand .logo-text { color: white; font-size: 1.6rem; margin-bottom: 18px; display: block; }
+.footer-brand .logo-text span { color: var(--accent); }
+.footer-brand p { opacity: 0.85; font-size: 0.95rem; line-height: 1.8; }
+.footer-col h4 { font-size: 1.15rem; margin-bottom: 22px; color: var(--accent); font-weight: 600; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul li a { color: rgba(255,255,255,0.85); text-decoration: none; transition: var(--transition); font-size: 0.95rem; }
+.footer-col ul li a:hover { color: var(--accent); padding-left: 4px; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 28px; text-align: center; opacity: 0.7; font-size: 0.9rem; }
+.btn {
+    padding: 16px 36px; border-radius: 50px; font-weight: 600; font-size: 1rem;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 12px;
+    transition: var(--transition); cursor: pointer; border: none; font-family: inherit;
+}
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white; box-shadow: 0 6px 24px rgba(30,86,49,0.3);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(30,86,49,0.4); }
+.btn-outline { background: transparent; color: var(--primary); border: 2.5px solid var(--primary); }
+.btn-outline:hover { background: var(--primary); color: white; transform: translateY(-3px); }
+.btn-accent {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: white; box-shadow: 0 6px 24px rgba(198,134,66,0.3);
+}
+.btn-accent:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(198,134,66,0.4); }
+.section-container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.section-header { text-align: center; margin-bottom: 64px; }
+.section-tag {
+    display: inline-block; background: rgba(30,86,49,0.08); color: var(--primary);
+    padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 600;
+    margin-bottom: 18px; letter-spacing: 0.5px; text-transform: uppercase;
+}
+.section-header h2 { font-size: 2.6rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 16px; }
+.section-header p { color: var(--text-light); font-size: 1.15rem; max-width: 600px; margin: 0 auto; }
+.fade-in { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.loader { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--white); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s ease, visibility 0.5s ease; }
+.loader.hidden { opacity: 0; visibility: hidden; }
+.loader-spinner { width: 56px; height: 56px; border: 4px solid var(--bg-dark); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.toast { position: fixed; bottom: 30px; right: 30px; background: var(--primary-dark); color: white; padding: 18px 28px; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); transform: translateY(120px); opacity: 0; transition: var(--transition); z-index: 9998; font-weight: 500; }
+.toast.show { transform: translateY(0); opacity: 1; }
+@media (max-width: 992px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .footer-grid { grid-template-columns: 1fr; text-align: center; }
+    .section-header h2 { font-size: 2rem; }
+}
 
+
+        /* Redesigned Hero */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center; padding: 140px 32px 100px;
+            background: linear-gradient(135deg, #f7f2ea 0%, #eef4f0 40%, #f5efe6 100%);
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -10%; right: -5%; width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(30,86,49,0.06) 0%, transparent 70%); border-radius: 50%;
+        }
+        .hero::after {
+            content: ''; position: absolute; bottom: -20%; left: -5%; width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(198,134,66,0.08) 0%, transparent 70%); border-radius: 50%;
+        }
+        .hero-container {
+            max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr;
+            gap: 80px; align-items: center; position: relative; z-index: 1;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: rgba(30,86,49,0.08); color: var(--primary);
+            padding: 10px 20px; border-radius: 50px; font-size: 0.9rem; font-weight: 600;
+            margin-bottom: 28px; border: 1px solid rgba(30,86,49,0.12);
+        }
+        .hero-badge i {
+            width: 28px; height: 28px; background: var(--primary); color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 0.75rem;
+        }
+        .hero-content h1 {
+            font-size: 3.6rem; font-weight: 800; color: var(--primary-dark); line-height: 1.15;
+            margin-bottom: 24px; letter-spacing: -1.5px;
+        }
+        .hero-content h1 .highlight {
+            color: var(--accent-dark); position: relative; display: inline;
+            background: linear-gradient(120deg, rgba(198,134,66,0.2) 0%, rgba(198,134,66,0.2) 100%);
+            background-repeat: no-repeat; background-size: 100% 40%; background-position: 0 88%;
+            padding: 0 8px; margin: 0 -8px;
+        }
+        .hero-content p {
+            font-size: 1.2rem; color: var(--text-light); margin-bottom: 36px; max-width: 520px; line-height: 1.8;
+        }
+        .hero-stats {
+            display: flex; gap: 0; margin-bottom: 40px;
+            background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow);
+            padding: 24px 32px; max-width: 480px;
+        }
+        .stat-item {
+            text-align: center; flex: 1; padding: 0 16px;
+            border-right: 1px solid var(--bg-dark);
+        }
+        .stat-item:last-child { border-right: none; }
+        .stat-number {
+            font-size: 1.9rem; font-weight: 800; color: var(--primary); display: block; line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.8rem; color: var(--text-light); font-weight: 500; margin-top: 6px; display: block;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .hero-btns { display: flex; gap: 18px; }
+
+        .hero-images {
+            position: relative; display: flex; justify-content: center; align-items: center;
+        }
+        .hero-images::before {
+            content: ''; position: absolute; width: 110%; height: 110%;
+            background: linear-gradient(135deg, rgba(30,86,49,0.08), rgba(198,134,66,0.08));
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; z-index: -1; animation: blob 8s ease-in-out infinite;
+        }
+        @keyframes blob {
+            0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; transform: rotate(0deg); }
+            50% { border-radius: 58% 42% 36% 64% / 48% 62% 38% 52%; transform: rotate(3deg); }
+        }
+        .hero-img-main {
+            width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg);
+            object-fit: cover; height: 480px; transition: var(--transition); border: 6px solid white;
+        }
+        .hero-img-main:hover { transform: scale(1.03) rotate(1deg); }
+        .hero-float-card {
+            position: absolute; bottom: 30px; left: -30px; background: white;
+            padding: 20px 28px; border-radius: var(--radius); box-shadow: var(--shadow-lg);
+            display: flex; align-items: center; gap: 16px; animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+        .float-icon {
+            width: 50px; height: 50px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 1.3rem;
+        }
+        .float-text { font-size: 0.9rem; }
+        .float-text strong { display: block; font-size: 1.2rem; color: var(--primary-dark); }
+
+        /* Products Section */
+        .products { background: linear-gradient(180deg, var(--bg) 0%, var(--white) 100%); padding: 100px 24px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+        .product-card {
+            background: var(--white); border-radius: var(--radius); overflow: hidden;
+            box-shadow: var(--shadow); transition: var(--transition); border: 1px solid rgba(0,0,0,0.03);
+            text-decoration: none; color: inherit; display: block;
+        }
+        .product-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+        .product-img-wrap { overflow: hidden; position: relative; height: 240px; }
+        .product-img {
+            width: 100%; height: 100%; object-fit: cover; transition: var(--transition);
+        }
+        .product-card:hover .product-img { transform: scale(1.08); }
+        .product-body { padding: 28px; }
+        .product-badge {
+            display: inline-block; background: rgba(30,86,49,0.08); color: var(--primary);
+            padding: 6px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;
+            margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .product-body h3 { font-size: 1.35rem; color: var(--primary-dark); margin-bottom: 12px; font-weight: 700; }
+        .product-body p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 18px; line-height: 1.7; }
+        .product-price {
+            font-size: 1.4rem; font-weight: 800; color: var(--accent-dark); margin-bottom: 20px;
+            display: flex; align-items: baseline; gap: 6px;
+        }
+        .product-price span { font-size: 0.9rem; color: var(--text-light); font-weight: 500; }
+        .product-btn {
+            width: 100%; padding: 14px; background: var(--primary); color: white; border: none;
+            border-radius: var(--radius-sm); font-weight: 700; cursor: pointer;
+            transition: var(--transition); font-family: inherit; font-size: 1rem;
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+        }
+        .product-btn:hover { background: var(--primary-dark); }
+
+        /* Other Sections */
+        .about { background: var(--white); padding: 100px 24px; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+        .about-images { position: relative; }
+        .about-img {
+            width: 100%; border-radius: var(--radius); box-shadow: var(--shadow);
+            object-fit: cover; height: 420px;
+        }
+        .about-img-secondary {
+            position: absolute; bottom: -30px; right: -30px; width: 220px; height: 220px;
+            border-radius: var(--radius); box-shadow: var(--shadow-lg); border: 5px solid white;
+            object-fit: cover;
+        }
+        .about-content h3 { font-size: 2.2rem; color: var(--primary-dark); margin-bottom: 24px; font-weight: 700; }
+        .about-content p { color: var(--text-light); margin-bottom: 20px; font-size: 1.05rem; line-height: 1.8; }
+        .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+        .about-feature {
+            display: flex; align-items: center; gap: 12px; padding: 14px 18px;
+            background: var(--bg); border-radius: var(--radius-sm); transition: var(--transition);
+        }
+        .about-feature:hover { background: rgba(30,86,49,0.06); transform: translateX(6px); }
+        .about-feature i { color: var(--primary); font-size: 1.2rem; }
+        .about-feature span { font-weight: 600; font-size: 0.95rem; }
+
+        .features { background: var(--white); padding: 100px 24px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; }
+        .feature-card {
+            background: var(--bg); padding: 44px 32px; border-radius: var(--radius);
+            text-align: center; transition: var(--transition); border: 1px solid rgba(0,0,0,0.02);
+        }
+        .feature-card:hover { background: var(--white); box-shadow: var(--shadow); transform: translateY(-6px); }
+        .feature-icon {
+            width: 72px; height: 72px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 24px; color: white; font-size: 1.6rem;
+            box-shadow: 0 12px 28px rgba(30,86,49,0.2);
+        }
+        .feature-card h3 { font-size: 1.25rem; color: var(--primary-dark); margin-bottom: 14px; font-weight: 700; }
+        .feature-card p { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; }
+
+        .gallery { background: linear-gradient(180deg, var(--white) 0%, var(--bg) 100%); padding: 100px 24px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .gallery-item {
+            position: relative; border-radius: var(--radius); overflow: hidden;
+            box-shadow: var(--shadow); cursor: pointer; height: 300px;
+        }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-overlay {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(transparent, rgba(20,61,34,0.85));
+            padding: 32px; color: white; transform: translateY(100%); transition: var(--transition);
+        }
+        .gallery-item:hover .gallery-overlay { transform: translateY(0); }
+        .gallery-overlay h4 { font-size: 1.2rem; margin-bottom: 6px; font-weight: 700; }
+        .gallery-overlay p { font-size: 0.9rem; opacity: 0.9; }
+
+        .location { background: var(--white); padding: 100px 24px; }
+        .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .location-info h3 { font-size: 2rem; color: var(--primary-dark); margin-bottom: 20px; font-weight: 700; }
+        .location-info p { color: var(--text-light); margin-bottom: 28px; font-size: 1.05rem; line-height: 1.8; }
+        .location-details { display: flex; flex-direction: column; gap: 18px; }
+        .location-item {
+            display: flex; align-items: flex-start; gap: 16px; padding: 18px;
+            background: var(--bg); border-radius: var(--radius-sm); transition: var(--transition);
+        }
+        .location-item:hover { background: rgba(30,86,49,0.06); }
+        .location-item i { color: var(--primary); font-size: 1.3rem; margin-top: 2px; }
+        .location-item div strong { display: block; color: var(--primary-dark); margin-bottom: 4px; font-weight: 600; }
+        .location-item div span { color: var(--text-light); font-size: 0.95rem; }
+        .map-container { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); height: 420px; }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+
+        .payment {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white; text-align: center; padding: 90px 24px;
+        }
+        .payment h2 { font-size: 2.4rem; margin-bottom: 18px; font-weight: 700; }
+        .payment p { opacity: 0.9; margin-bottom: 44px; max-width: 500px; margin-left: auto; margin-right: auto; font-size: 1.05rem; }
+        .payment-methods { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
+        .payment-card {
+            background: rgba(255,255,255,0.12); backdrop-filter: blur(12px);
+            padding: 36px 48px; border-radius: var(--radius);
+            border: 1px solid rgba(255,255,255,0.25); transition: var(--transition); min-width: 300px;
+        }
+        .payment-card:hover { background: rgba(255,255,255,0.22); transform: translateY(-6px); }
+        .payment-logo { font-size: 3.2rem; margin-bottom: 18px; }
+        .payment-card h3 { font-size: 1.4rem; margin-bottom: 10px; font-weight: 700; }
+        .payment-card p { font-size: 0.95rem; opacity: 0.9; margin-bottom: 0; }
+
+        .contact { background: var(--bg); padding: 100px 24px; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h3 { font-size: 2rem; color: var(--primary-dark); margin-bottom: 20px; font-weight: 700; }
+        .contact-info p { color: var(--text-light); margin-bottom: 32px; line-height: 1.7; }
+        .contact-links { display: flex; flex-direction: column; gap: 18px; }
+        .contact-link {
+            display: flex; align-items: center; gap: 16px; padding: 18px 24px;
+            background: var(--white); border-radius: var(--radius-sm); text-decoration: none;
+            color: var(--text); transition: var(--transition); box-shadow: var(--shadow);
+        }
+        .contact-link:hover { transform: translateX(10px); box-shadow: var(--shadow-lg); }
+        .contact-link i {
+            width: 44px; height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 1.1rem; flex-shrink: 0;
+        }
+        .contact-link div strong { display: block; color: var(--primary-dark); margin-bottom: 4px; font-weight: 600; }
+        .contact-link div span { font-size: 0.9rem; color: var(--text-light); }
+        .contact-form {
+            background: var(--white); padding: 44px; border-radius: var(--radius); box-shadow: var(--shadow);
+        }
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; margin-bottom: 10px; font-weight: 600; color: var(--primary-dark); font-size: 0.95rem; }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%; padding: 16px 20px; border: 2px solid var(--bg-dark);
+            border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;
+            transition: var(--transition); background: var(--bg);
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline: none; border-color: var(--primary-light); background: var(--white);
+            box-shadow: 0 0 0 5px rgba(30,86,49,0.08);
+        }
+        .form-group textarea { resize: vertical; min-height: 130px; }
+
+        @media (max-width: 992px) {
+            .hero-container { grid-template-columns: 1fr; gap: 60px; }
+            .hero-content h1 { font-size: 2.8rem; }
+            .about-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; }
+            .about-img-secondary { display: none; }
+            .hero-images { order: -1; }
+        }
+        @media (max-width: 768px) {
+            .hero { padding: 120px 20px 80px; }
+            .hero-content h1 { font-size: 2.2rem; }
+            .hero-stats { padding: 18px 20px; }
+            .stat-number { font-size: 1.5rem; }
+            .hero-btns { flex-direction: column; }
+            .btn { justify-content: center; width: 100%; }
+            .hero-float-card { left: 10px; bottom: 10px; padding: 14px 18px; }
+            section { padding: 70px 20px; }
+            .section-header h2 { font-size: 2rem; }
+            .about-features { grid-template-columns: 1fr; }
+            .payment-card { min-width: 100%; }
+            .contact-form { padding: 28px; }
+        }
+    </style>
+    <link rel="canonical" href="https://madinafishfeedmill.com/harvest/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Madina Harvest",
+      "image": "20260515_195342785.png",
+      "@id": "https://madinafishfeedmill.com/harvest/",
+      "url": "https://madinafishfeedmill.com/harvest/",
+      "telephone": "+8801912345678",
+      "email": "madinaaquafish@gmail.com",
+      "priceRange": "৳",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Trishal",
+        "addressLocality": "Mymensingh",
+        "addressRegion": "Mymensingh",
+        "addressCountry": "BD"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.58,
+        "longitude": 90.42
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://wa.me/8801912345678"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Bangladesh"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Farm Products",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Fresh Quail Eggs",
+              "description": "Daily collected fresh quail eggs, 4 pieces per hali",
+              "price": "15.00",
+              "priceCurrency": "BDT",
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Healthy Quail Birds",
+              "description": "Vaccinated quail birds from trusted farmers",
+              "price": "50.00",
+              "priceCurrency": "BDT",
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Pure Mustard Oil",
+              "description": "100% organic cold-pressed mustard oil",
+              "priceCurrency": "BDT",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    <meta name="geo.region" content="BD">
+    <meta name="geo.placename" content="Trishal, Mymensingh">
+    <meta name="geo.position" content="24.58;90.42">
+    <meta name="ICBM" content="24.58, 90.42">
+    <meta property="og:locale" content="bn_BD">
+    <meta property="og:locale:alternate" content="en_BD">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Madina Harvest - Natural Farm Products">
+    <meta name="twitter:description" content="Fresh quail eggs, birds, desi chicken & organic mustard oil from Trishal, Mymensingh">
+    <meta name="theme-color" content="#1e5631">
+    <meta name="msapplication-TileColor" content="#1e5631">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/harvest/sitemap.xml">
+</head>
+<body>
+    <div class="loader" id="loader"><div class="loader-spinner"></div></div>
+    <div class="toast" id="toast"></div>
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+                <div class="logo-text">Madina <span>Harvest</span></div>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home" class="active" data-en="Home" data-bn="হোম">Home</a></li>
+                    <li><a href="index.html#about" data-en="About" data-bn="আমাদের সম্পর্কে">About</a></li>
+                    <li><a href="index.html#products" data-en="Products" data-bn="পণ্য">Products</a></li>
+                    <li><a href="index.html#gallery" data-en="Gallery" data-bn="গ্যালারি">Gallery</a></li>
+                    <li><a href="index.html#location" data-en="Location" data-bn="অবস্থান">Location</a></li>
+                    <li><a href="index.html#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a></li>
+                </ul>
+                <div class="lang-toggle" id="langToggle" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="langText">বাংলা</span>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <div class="hero-badge">
+                    <i class="fas fa-check"></i>
+                    <span data-en="100% Natural & Organic" data-bn="১০০% প্রাকৃতিক ও জৈব">100% Natural & Organic</span>
+                </div>
+                <h1 data-en="Natural Protein from <span class='highlight'>Madina Harvest</span>" data-bn="<span class='highlight'>মাদিনা হারভেস্ট</span> থেকে প্রাকৃতিক প্রোটিন">Natural Protein from <span class="highlight">Madina Harvest</span></h1>
+                <p data-en="Fresh quail eggs, healthy birds, desi chicken & organic mustard oil. Direct from our farm in Trishal, Mymensingh to your doorstep." data-bn="তাজা কোয়েল ডিম, সুস্থ পাখি, দেশি মুরগি ও জৈব সরিষার তেল। ত্রিশাল, ময়মনসিংহের আমাদের খামার থেকে সরাসরি আপনার দোরগোড়ায়।">Fresh quail eggs, healthy birds, desi chicken & organic mustard oil. Direct from our farm in Trishal, Mymensingh to your doorstep.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">45+</span>
+                        <span class="stat-label" data-en="Quail Birds" data-bn="কোয়েল পাখি">Quail Birds</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label" data-en="Eggs Daily" data-bn="প্রতিদিন ডিম">Eggs Daily</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label" data-en="Natural" data-bn="প্রাকৃতিক">Natural</span>
+                    </div>
+                </div>
+                <div class="hero-btns">
+                    <a href="index.html#products" class="btn btn-primary" data-en="Order Now <i class='fas fa-arrow-right'></i>" data-bn="এখনই অর্ডার করুন <i class='fas fa-arrow-right'></i>">Order Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://wa.me/8801912345678" class="btn btn-outline" target="_blank" data-en="WhatsApp <i class='fab fa-whatsapp'></i>" data-bn="হোয়াটসঅ্যাপ <i class='fab fa-whatsapp'></i>">WhatsApp <i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="hero-images fade-in">
+                <img src="20260515_195342785.png" alt="Madina Harvest Quail Farm" class="hero-img-main" loading="lazy">
+                <div class="hero-float-card">
+                    <div class="float-icon"><i class="fas fa-egg"></i></div>
+                    <div class="float-text">
+                        <strong data-en="Since April 2026" data-bn="এপ্রিল ২০২৬ থেকে">Since April 2026</strong>
+                        <span data-en="Trusted Farm" data-bn="বিশ্বস্ত খামার">Trusted Farm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-images fade-in">
+                    <img src="20260514_164557.jpg" alt="Madina Harvest Farm" class="about-img" loading="lazy">
+                    <img src="20260514_164918.jpg" alt="Quail Birds" class="about-img-secondary" loading="lazy">
+                </div>
+                <div class="about-content fade-in">
+                    <span class="section-tag" data-en="ABOUT US" data-bn="আমাদের সম্পর্কে">ABOUT US</span>
+                    <h3 data-en="Our Journey Started in April 2026" data-bn="আমাদের যাত্রা শুরু এপ্রিল ২০২৬">Our Journey Started in April 2026</h3>
+                    <p data-en="Madina Harvest is a natural farm located in the heart of Bangladesh - Trishal, Mymensingh. We started with 45 quail birds producing 40+ eggs daily. Our goal is to provide natural, high-quality protein sources including eggs, birds, chicken, goat, and cattle." data-bn="মাদিনা হারভেস্ট বাংলাদেশের হৃদয়ে - ত্রিশাল, ময়মনসিংহে অবস্থিত একটি প্রাকৃতিক খামার। আমরা ৪৫টি কোয়েল পাখি নিয়ে শুরু করেছি যা প্রতিদিন ৪০+ ডিম উৎপাদন করে। আমাদের লক্ষ্য হলো ডিম, পাখি, মুরগি, ছাগল ও গবাদি পশুসহ প্রাকৃতিক, উচ্চমানের প্রোটিনের উৎস সরবরাহ করা।">Madina Harvest is a natural farm located in the heart of Bangladesh - Trishal, Mymensingh. We started with 45 quail birds producing 40+ eggs daily. Our goal is to provide natural, high-quality protein sources including eggs, birds, chicken, goat, and cattle.</p>
+                    <p data-en="By the end of 2026, we aim to expand to 300-400 birds and introduce high-quality desi chicken farming for eggs and meat. We also sell organic products like pure mustard oil. All our partner farmers are contracted to use zero pesticides - 100% natural." data-bn="২০২৬ সালের শেষ নাগাদ, আমরা ৩০০-৪০০ পাখিতে সম্প্রসারণের লক্ষ্য রেখেছি এবং ডিম ও মাংসের জন্য উচ্চমানের দেশি মুরগি চাষ চালু করব। আমরা বিশুদ্ধ সরিষার তেলের মতো জৈব পণ্যও বিক্রি করি। আমাদের সব অংশীদার কৃষকদের সাথে চুক্তি রয়েছে যে তারা কোনো কীটনাশক ব্যবহার করবে না - ১০০% প্রাকৃতিক।">By the end of 2026, we aim to expand to 300-400 birds and introduce high-quality desi chicken farming for eggs and meat. We also sell organic products like pure mustard oil. All our partner farmers are contracted to use zero pesticides - 100% natural.</p>
+                    <div class="about-features">
+                        <div class="about-feature"><i class="fas fa-check-circle"></i><span data-en="100% Natural Feed" data-bn="১০০% প্রাকৃতিক খাদ্য">100% Natural Feed</span></div>
+                        <div class="about-feature"><i class="fas fa-check-circle"></i><span data-en="Zero Pesticides" data-bn="শূন্য কীটনাশক">Zero Pesticides</span></div>
+                        <div class="about-feature"><i class="fas fa-check-circle"></i><span data-en="Organic Products" data-bn="জৈব পণ্য">Organic Products</span></div>
+                        <div class="about-feature"><i class="fas fa-check-circle"></i><span data-en="Farm Fresh Daily" data-bn="প্রতিদিন খামার তাজা">Farm Fresh Daily</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-en="OUR PRODUCTS" data-bn="আমাদের পণ্য">OUR PRODUCTS</span>
+                <h2 data-en="Fresh From Our Farm" data-bn="আমাদের খামার থেকে তাজা">Fresh From Our Farm</h2>
+                <p data-en="Directly collected from our farm and trusted partner farmers" data-bn="আমাদের খামার ও বিশ্বস্ত অংশীদার কৃষকদের কাছ থেকে সরাসরি সংগ্রহকৃত">Directly collected from our farm and trusted partner farmers</p>
+            </div>
+            <div class="products-grid">
+                <a href="quail-eggs.html" class="product-card fade-in">
+                    <div class="product-img-wrap">
+                        <img src="20260514_164835.jpg" alt="Quail Eggs" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-badge" data-en="POPULAR" data-bn="জনপ্রিয়">POPULAR</span>
+                        <h3 data-en="Fresh Quail Eggs" data-bn="তাজা কোয়েল ডিম">Fresh Quail Eggs</h3>
+                        <p data-en="Daily collected fresh quail eggs. Perfect for eating and hatching. 4 pieces per hali." data-bn="প্রতিদিন সংগ্রহকৃত তাজা কোয়েল ডিম। খাওয়ার ও বাচ্চা ফোটানোর জন্য উপযুক্ত। প্রতি হালিতে ৪টি।">Daily collected fresh quail eggs. Perfect for eating and hatching. 4 pieces per hali.</p>
+                        <div class="product-price">৳15-22 <span data-en="/ Hali (4 pcs)" data-bn="/ হালি (৪টি)">/ Hali (4 pcs)</span></div>
+                        <div class="product-btn" data-en="View Details <i class='fas fa-arrow-right'></i>" data-bn="বিস্তারিত দেখুন <i class='fas fa-arrow-right'></i>">View Details <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+                <a href="quail-birds.html" class="product-card fade-in">
+                    <div class="product-img-wrap">
+                        <img src="20260515_195421297.png" alt="Quail Birds" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-badge" data-en="LIVE BIRDS" data-bn="জীবন্ত পাখি">LIVE BIRDS</span>
+                        <h3 data-en="Healthy Quail Birds" data-bn="সুস্থ কোয়েল পাখি">Healthy Quail Birds</h3>
+                        <p data-en="Healthy, vaccinated quail birds from trusted farmers. Suitable for pets and commercial farming." data-bn="বিশ্বস্ত কৃষকদের কাছ থেকে সুস্থ, টিকা দেওয়া কোয়েল পাখি। পোষা ও বাণিজ্যিক চাষের জন্য উপযোগী।">Healthy, vaccinated quail birds from trusted farmers. Suitable for pets and commercial farming.</p>
+                        <div class="product-price">৳50-80 <span data-en="/ Bird (varies by age)" data-bn="/ পাখি (বয়স অনুযায়ী)">/ Bird (varies by age)</span></div>
+                        <div class="product-btn" data-en="View Details <i class='fas fa-arrow-right'></i>" data-bn="বিস্তারিত দেখুন <i class='fas fa-arrow-right'></i>">View Details <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+                <a href="mustard-oil.html" class="product-card fade-in">
+                    <div class="product-img-wrap">
+                        <img src="1000089654.jpg" alt="Mustard Oil" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-badge" data-en="ORGANIC" data-bn="জৈব">ORGANIC</span>
+                        <h3 data-en="Pure Mustard Oil" data-bn="বিশুদ্ধ সরিষার তেল">Pure Mustard Oil</h3>
+                        <p data-en="100% organic cold-pressed mustard oil. No chemicals, no preservatives. Direct from our contracted farmers." data-bn="১০০% জৈব ঠান্ডা চাপা সরিষার তেল। কোনো রসায়ন, কোনো সংরক্ষক নয়। আমাদের চুক্তিবদ্ধ কৃষকদের কাছ থেকে সরাসরি।">100% organic cold-pressed mustard oil. No chemicals, no preservatives. Direct from our contracted farmers.</p>
+                        <div class="product-price">৳Contact <span data-en="for price" data-bn="মূল্যের জন্য">for price</span></div>
+                        <div class="product-btn" data-en="View Details <i class='fas fa-arrow-right'></i>" data-bn="বিস্তারিত দেখুন <i class='fas fa-arrow-right'></i>">View Details <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+                <a href="desi-chicken.html" class="product-card fade-in">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5bbcd3?w=400&h=300&fit=crop" alt="Desi Chicken" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-badge" data-en="COMING SOON" data-bn="শীঘ্রই আসছে">COMING SOON</span>
+                        <h3 data-en="Desi Chicken & Eggs" data-bn="দেশি মুরগি ও ডিম">Desi Chicken & Eggs</h3>
+                        <p data-en="High-quality desi chicken farming coming by end of 2026. Premium eggs and chicken meat." data-bn="২০২৬ সালের শেষ নাগাদ উচ্চমানের দেশি মুরগি চাষ আসছে। প্রিমিয়াম ডিম ও মুরগির মাংস।">High-quality desi chicken farming coming by end of 2026. Premium eggs and chicken meat.</p>
+                        <div class="product-price"><span data-en="Launching End of 2026" data-bn="২০২৬ শেষে চালু">Launching End of 2026</span></div>
+                        <div class="product-btn" onclick="event.preventDefault(); notifyMe('Desi Chicken');" data-en="Notify Me <i class='fas fa-bell'></i>" data-bn="আমাকে জানান <i class='fas fa-bell'></i>">Notify Me <i class="fas fa-bell"></i></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-en="WHY CHOOSE US" data-bn="কেন আমাদের বেছে নেবেন">WHY CHOOSE US</span>
+                <h2 data-en="Quality & Trust is Our Identity" data-bn="গুণমান ও বিশ্বস্ততাই আমাদের পরিচয়">Quality & Trust is Our Identity</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                    <h3 data-en="100% Natural Feed" data-bn="১০০% প্রাকৃতিক খাদ্য">100% Natural Feed</h3>
+                    <p data-en="No chemical mixtures. Only natural food for our birds and animals." data-bn="কোনো রাসায়নিক মিশ্রণ ছাড়াই শুধুমাত্র প্রাকৃতিক খাদ্য।">No chemical mixtures. Only natural food for our birds and animals.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3 data-en="Vaccinated Birds" data-bn="টিকা দেওয়া পাখি">Vaccinated Birds</h3>
+                    <p data-en="Regular health checkups and vaccination completed for all birds." data-bn="সব পাখির জন্য নিয়মিত স্বাস্থ্য পরীক্ষা ও টিকাকরণ সম্পন্ন।">Regular health checkups and vaccination completed for all birds.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-egg"></i></div>
+                    <h3 data-en="Fresh Eggs Daily" data-bn="প্রতিদিন তাজা ডিম">Fresh Eggs Daily</h3>
+                    <p data-en="Collected every morning and delivered directly to you fresh." data-bn="প্রতি সকালে সংগ্রহকৃত এবং সরাসরি তাজা ডেলিভারি।">Collected every morning and delivered directly to you fresh.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3 data-en="24/7 Support" data-bn="২৪/৭ সাপোর্ট">24/7 Support</h3>
+                    <p data-en="Call or WhatsApp us anytime for orders and inquiries." data-bn="অর্ডার ও জিজ্ঞাসার জন্য যেকোনো সময় কল বা হোয়াটসঅ্যাপ করুন।">Call or WhatsApp us anytime for orders and inquiries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-en="GALLERY" data-bn="গ্যালারি">GALLERY</span>
+                <h2 data-en="Life at Our Farm" data-bn="আমাদের খামারের জীবন">Life at Our Farm</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="20260515_195342785.png" alt="Quail Farm" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 data-en="Our Quail Farm" data-bn="আমাদের কোয়েল খামার">Our Quail Farm</h4>
+                        <p data-en="Daily egg collection area" data-bn="প্রতিদিনের ডিম সংগ্রহ এলাকা">Daily egg collection area</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="20260515_195421297.png" alt="Quail Birds Indoor" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 data-en="Indoor Setup" data-bn="ইনডোর সেটআপ">Indoor Setup</h4>
+                        <p data-en="Clean and healthy environment" data-bn="পরিষ্কার ও সুস্থ পরিবেশ">Clean and healthy environment</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="20260514_164835.jpg" alt="Fresh Eggs" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 data-en="Fresh Collection" data-bn="তাজা সংগ্রহ">Fresh Collection</h4>
+                        <p data-en="Daily 40+ eggs ready for delivery" data-bn="প্রতিদিন ৪০+ ডিম ডেলিভারির জন্য প্রস্তুত">Daily 40+ eggs ready for delivery</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="20260514_164557.jpg" alt="Farm Exterior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 data-en="Farm Exterior" data-bn="খামারের বাইরের দৃশ্য">Farm Exterior</h4>
+                        <p data-en="Trishal, Mymensingh location" data-bn="ত্রিশাল, ময়মনসিংহ অবস্থান">Trishal, Mymensingh location</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="20260514_164918.jpg" alt="Birds Feeding" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 data-en="Feeding Time" data-bn="খাওয়ার সময়">Feeding Time</h4>
+                        <p data-en="Natural feed for healthy birds" data-bn="সুস্থ পাখির জন্য প্রাকৃতিক খাদ্য">Natural feed for healthy birds</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="1000089654.jpg" alt="Organic Mustard Oil" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 data-en="Organic Products" data-bn="জৈব পণ্য">Organic Products</h4>
+                        <p data-en="Pure mustard oil and more" data-bn="বিশুদ্ধ সরিষার তেল ও আরও">Pure mustard oil and more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-en="FIND US" data-bn="আমাদের খুঁজুন">FIND US</span>
+                <h2 data-en="Visit Our Farm" data-bn="আমাদের খামার পরিদর্শন করুন">Visit Our Farm</h2>
+            </div>
+            <div class="location-grid">
+                <div class="location-info fade-in">
+                    <h3 data-en="Madina Harvest Location" data-bn="মাদিনা হারভেস্টের অবস্থান">Madina Harvest Location</h3>
+                    <p data-en="Our farm is situated in the heart of Bangladesh - Trishal, Mymensingh. Our fish feed factory is located at the pinned location, and our farm is just a 5-minute walk from there." data-bn="আমাদের খামার বাংলাদেশের হৃদয়ে - ত্রিশাল, ময়মনসিংহে অবস্থিত। আমাদের মাছের খাদ্য কারখানা মার্ক করা অবস্থানে রয়েছে, এবং আমাদের খামার সেখান থেকে মাত্র ৫ মিনিটের হাঁটা পথ।">Our farm is situated in the heart of Bangladesh - Trishal, Mymensingh. Our fish feed factory is located at the pinned location, and our farm is just a 5-minute walk from there.</p>
+                    <div class="location-details">
+                        <div class="location-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong data-en="Address" data-bn="ঠিকানা">Address</strong>
+                                <span data-en="Trishal, Mymensingh, Bangladesh (5 min walk from fish feed factory)" data-bn="ত্রিশাল, ময়মনসিংহ, বাংলাদেশ (মাছের খাদ্য কারখানা থেকে ৫ মিনিট হাঁটা পথ)">Trishal, Mymensingh, Bangladesh (5 min walk from fish feed factory)</span>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong data-en="Visiting Hours" data-bn="পরিদর্শনের সময়">Visiting Hours</strong>
+                                <span data-en="Open 6 days a week (Closed Friday)" data-bn="সাপ্তাহিক ৬ দিন খোলা (শুক্রবার বন্ধ)">Open 6 days a week (Closed Friday)</span>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-walking"></i>
+                            <div>
+                                <strong data-en="Distance" data-bn="দূরত্ব">Distance</strong>
+                                <span data-en="5 minutes walking from fish feed factory" data-bn="মাছের খাদ্য কারখানা থেকে ৫ মিনিট হাঁটা পথ">5 minutes walking from fish feed factory</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/UZsThRHZw3FxHUW9A" target="_blank" class="btn btn-primary" style="margin-top: 24px;" data-en="Open in Google Maps <i class='fas fa-external-link-alt'></i>" data-bn="গুগল ম্যাপে খুলুন <i class='fas fa-external-link-alt'></i>">Open in Google Maps <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="map-container fade-in">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116640.123!2d90.35!3d24.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375643f75e5f9d45%3A0xa09d6a2e4b7c0e0!2sTrishal%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Madina Harvest Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment" id="payment">
+        <div class="section-container">
+            <h2 data-en="Easy Payment with bKash" data-bn="bKash দিয়ে সহজ পেমেন্ট">Easy Payment with bKash</h2>
+            <p data-en="We accept bKash for all orders. Fast, secure, and convenient payment for Bangladesh." data-bn="আমরা সব অর্ডারের জন্য bKash গ্রহণ করি। বাংলাদেশের জন্য দ্রুত, নিরাপদ ও সুবিধাজনক পেমেন্ট।">We accept bKash for all orders. Fast, secure, and convenient payment for Bangladesh.</p>
+            <div class="payment-methods">
+                <div class="payment-card">
+                    <div class="payment-logo"><i class="fas fa-mobile-alt" style="color: #e2136e;"></i></div>
+                    <h3>bKash</h3>
+                    <p data-en="Send Money / Payment" data-bn="সেন্ড মানি / পেমেন্ট">Send Money / Payment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-en="CONTACT" data-bn="যোগাযোগ">CONTACT</span>
+                <h2 data-en="Get In Touch" data-bn="যোগাযোগ করুন">Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3 data-en="Order Now" data-bn="এখনই অর্ডার করুন">Order Now</h3>
+                    <p data-en="Phone order or WhatsApp message. Fast delivery available." data-bn="ফোনে অর্ডার বা হোয়াটসঅ্যাপে মেসেজ। দ্রুত ডেলিভারি পাওয়া যায়।">Phone order or WhatsApp message. Fast delivery available.</p>
+                    <div class="contact-links">
+                        <a href="tel:+8801912345678" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            <div><strong data-en="Phone" data-bn="ফোন">Phone</strong><span>+880 1912-345678</span></div>
+                        </a>
+                        <a href="https://wa.me/8801912345678" target="_blank" class="contact-link">
+                            <i class="fab fa-whatsapp"></i>
+                            <div><strong>WhatsApp</strong><span data-en="Message us anytime" data-bn="যেকোনো সময় মেসেজ করুন">Message us anytime</span></div>
+                        </a>
+                        <a href="mailto:madinaaquafish@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <div><strong data-en="Email" data-bn="ইমেইল">Email</strong><span>madinaaquafish@gmail.com</span></div>
+                        </a>
+                        <div class="contact-link" style="cursor: default;">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div><strong data-en="Address" data-bn="ঠিকানা">Address</strong><span data-en="Trishal, Mymensingh, Bangladesh" data-bn="ত্রিশাল, ময়মনসিংহ, বাংলাদেশ">Trishal, Mymensingh, Bangladesh</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label data-en="Your Name" data-bn="আপনার নাম">Your Name</label>
+                            <input type="text" placeholder="Enter your name" required data-en-placeholder="Enter your name" data-bn-placeholder="আপনার নাম লিখুন">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Phone Number" data-bn="ফোন নম্বর">Phone Number</label>
+                            <input type="tel" placeholder="01XXXXXXXXX" required pattern="[0-9]11" data-en-placeholder="01XXXXXXXXX" data-bn-placeholder="01XXXXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Product" data-bn="পণ্য">Product</label>
+                            <select required>
+                                <option value="" data-en="Select Product" data-bn="পণ্য নির্বাচন করুন">Select Product</option>
+                                <option value="quail-eggs" data-en="Quail Eggs (৳15-22/hali)" data-bn="কোয়েল ডিম (৳১৫-২২/হালি)">Quail Eggs (৳15-22/hali)</option>
+                                <option value="quail-birds" data-en="Quail Birds (৳50-80/bird)" data-bn="কোয়েল পাখি (৳৫০-৮০/পাখি)">Quail Birds (৳50-80/bird)</option>
+                                <option value="mustard-oil" data-en="Mustard Oil" data-bn="সরিষার তেল">Mustard Oil</option>
+                                <option value="other" data-en="Other" data-bn="অন্যান্য">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Quantity" data-bn="পরিমাণ">Quantity</label>
+                            <input type="number" placeholder="How many?" min="1" required data-en-placeholder="How many?" data-bn-placeholder="কতটি?">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Message" data-bn="বার্তা">Message</label>
+                            <textarea placeholder="Any special requirements..." data-en-placeholder="Any special requirements..." data-bn-placeholder="কোনো বিশেষ প্রয়োজন..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;" data-en="Send Order Request <i class='fas fa-paper-plane'></i>" data-bn="অর্ডার অনুরোধ পাঠান <i class='fas fa-paper-plane'></i>">Send Order Request <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text">Madina <span>Harvest</span></div>
+                    <p data-en="Natural farm products from Trishal, Mymensingh, Bangladesh. Providing fresh quail eggs, healthy birds, and organic products since April 2026." data-bn="ত্রিশাল, ময়মনসিংহ, বাংলাদেশ থেকে প্রাকৃতিক খামার পণ্য। এপ্রিল ২০২৬ থেকে তাজা কোয়েল ডিম, সুস্থ পাখি ও জৈব পণ্য সরবরাহ করছি।">Natural farm products from Trishal, Mymensingh, Bangladesh. Providing fresh quail eggs, healthy birds, and organic products since April 2026.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Quick Links" data-bn="দ্রুত লিঙ্ক">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home" data-en="Home" data-bn="হোম">Home</a></li>
+                        <li><a href="index.html#about" data-en="About" data-bn="আমাদের সম্পর্কে">About</a></li>
+                        <li><a href="index.html#products" data-en="Products" data-bn="পণ্য">Products</a></li>
+                        <li><a href="index.html#gallery" data-en="Gallery" data-bn="গ্যালারি">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Products" data-bn="পণ্য">Products</h4>
+                    <ul>
+                        <li><a href="quail-eggs.html" data-en="Quail Eggs" data-bn="কোয়েল ডিম">Quail Eggs</a></li>
+                        <li><a href="quail-birds.html" data-en="Quail Birds" data-bn="কোয়েল পাখি">Quail Birds</a></li>
+                        <li><a href="mustard-oil.html" data-en="Mustard Oil" data-bn="সরিষার তেল">Mustard Oil</a></li>
+                        <li><a href="desi-chicken.html" data-en="Desi Chicken" data-bn="দেশি মুরগি">Desi Chicken</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Contact" data-bn="যোগাযোগ">Contact</h4>
+                    <ul>
+                        <li><a href="tel:+8801912345678">+880 1912-345678</a></li>
+                        <li><a href="https://wa.me/8801912345678" target="_blank">WhatsApp</a></li>
+                        <li><a href="mailto:madinaaquafish@gmail.com">madinaaquafish@gmail.com</a></li>
+                        <li><span data-en="Trishal, Mymensingh" data-bn="ত্রিশাল, ময়মনসিংহ">Trishal, Mymensingh</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2026 Madina Harvest. All rights reserved. | Made with ❤️ in Bangladesh" data-bn="© ২০২৬ মাদিনা হারভেস্ট। সর্বস্বত্ব সংরক্ষিত। | বাংলাদেশে ❤️ দিয়ে তৈরি">© 2026 Madina Harvest. All rights reserved. | Made with ❤️ in Bangladesh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentLang = 'en';
+
+        function detectLanguage() {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('bn') || userLang.startsWith('bd')) return 'bn';
+            return 'en';
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'bn' : 'en';
+            updateLanguage();
+            localStorage.setItem('madinaHarvestLang', currentLang);
+        }
+
+        function updateLanguage() {
+            const elements = document.querySelectorAll('[data-en]');
+            elements.forEach(el => {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = el.getAttribute('data-' + currentLang + '-placeholder') || el.getAttribute('data-en-placeholder');
+                } else if (el.tagName === 'OPTION') {
+                    el.textContent = el.getAttribute('data-' + currentLang) || el.getAttribute('data-en');
+                } else {
+                    el.innerHTML = el.getAttribute('data-' + currentLang) || el.getAttribute('data-en');
+                }
+            });
+            document.documentElement.lang = currentLang === 'bn' ? 'bn' : 'en';
+            const langText = document.getElementById('langText');
+            if (langText) langText.textContent = currentLang === 'en' ? 'বাংলা' : 'English';
+            showToast(currentLang === 'bn' ? 'ভাষা বাংলায় পরিবর্তিত হয়েছে' : 'Language changed to English');
+        }
+
+        const savedLang = localStorage.getItem('madinaHarvestLang');
+        if (savedLang) currentLang = savedLang;
+        else currentLang = detectLanguage();
+
+        function initScrollAnimation() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+            }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        }
+
+        function initHeaderScroll() {
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
+        }
+
+        function initActiveNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes('#' + current)) link.classList.add('active');
+                });
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function orderProduct(product) {
+            const msg = currentLang === 'bn' ? 'আমি ' + product + ' অর্ডার করতে চাই' : 'I want to order ' + product;
+            window.open('https://wa.me/8801912345678?text=' + encodeURIComponent(msg), '_blank');
+        }
+
+        function notifyMe(product) {
+            showToast(currentLang === 'bn' ? product + ' চালু হলে আমরা আপনাকে জানাব!' : 'We will notify you when ' + product + ' launches!');
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            showToast(currentLang === 'bn' ? 'অর্ডার অনুরোধ পাঠানো হয়েছে! আমরা শীঘ্রই যোগাযোগ করব।' : 'Order request sent! We will contact you soon.');
+            e.target.reset();
+        }
+
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nav-links');
+            if (nav.style.display === 'flex') { nav.style.display = 'none'; return; }
+            nav.style.display = 'flex';
+            nav.style.position = 'absolute';
+            nav.style.top = '76px';
+            nav.style.left = '0';
+            nav.style.right = '0';
+            nav.style.flexDirection = 'column';
+            nav.style.background = 'white';
+            nav.style.padding = '24px';
+            nav.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+            nav.style.zIndex = '999';
+            nav.style.gap = '20px';
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+                updateLanguage();
+            }, 800);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollAnimation();
+            initHeaderScroll();
+            initActiveNav();
+        });
+
+        document.addEventListener('contextmenu', (e) => { if (e.target.tagName === 'IMG') e.preventDefault(); });
+    </script>
+</body>
+</html>Item('madinaHarvestLang');
+        if (savedLang) currentLang = savedLang;
+        else currentLang = detectLanguage();
+
+        function initScrollAnimation() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+            }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        }
+
+        function initHeaderScroll() {
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            });
+        }
+
+        function initActiveNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes('#' + current)) link.classList.add('active');
+                });
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function orderProduct(product) {
+            const msg = currentLang === 'bn' ? 'আমি ' + product + ' অর্ডার করতে চাই' : 'I want to order ' + product;
+            window.open('https://wa.me/8801912345678?text=' + encodeURIComponent(msg), '_blank');
+        }
+
+        function notifyMe(product) {
+            showToast(currentLang === 'bn' ? product + ' চালু হলে আমরা আপনাকে জানাব!' : 'We will notify you when ' + product + ' launches!');
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            showToast(currentLang === 'bn' ? 'অর্ডার অনুরোধ পাঠানো হয়েছে! আমরা শীঘ্রই যোগাযোগ করব।' : 'Order request sent! We will contact you soon.');
+            e.target.reset();
+        }
+
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nav-links');
+            if (nav.style.display === 'flex') { nav.style.display = 'none'; return; }
+            nav.style.display = 'flex';
+            nav.style.position = 'absolute';
+            nav.style.top = '76px';
+            nav.style.left = '0';
+            nav.style.right = '0';
+            nav.style.flexDirection = 'column';
+            nav.style.background = 'white';
+            nav.style.padding = '24px';
+            nav.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+            nav.style.zIndex = '999';
+            nav.style.gap = '20px';
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+                updateLanguage();
+            }, 800);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollAnimation();
+            initHeaderScroll();
+            initActiveNav();
+        });
+
+        document.addEventListener('contextmenu', (e) => { if (e.target.tagName === 'IMG') e.preventDefault(); });
+    </script>
+</body>
+</html>
