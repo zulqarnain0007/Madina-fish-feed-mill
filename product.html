@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product — Purer Plate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <span>📞 Order by Phone: <a href="tel:+8801234567890">+880 1234-567890</a></span>
+            <span>Free delivery on orders over ৳1,500</span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">Purer<span>Plate</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="farmers.html">Our Farmers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="search-btn">🔍</a>
+                <a href="cart.html" class="cart-btn">
+                    🛒 <span class="cart-count">0</span>
+                </a>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="breadcrumb-product">Product</span>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container product-detail-grid">
+            <div class="product-gallery">
+                <div class="main-image" id="product-main-image">
+                    <div class="img-placeholder large">Product Image</div>
+                </div>
+                <div class="thumbnail-row">
+                    <div class="thumb active"><div class="img-placeholder small">1</div></div>
+                    <div class="thumb"><div class="img-placeholder small">2</div></div>
+                    <div class="thumb"><div class="img-placeholder small">3</div></div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <span class="product-category" id="product-category">Category</span>
+                <h1 id="product-name">Product Name</h1>
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="review-count">(<span id="review-count">0</span> reviews)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price" id="product-price">৳0</span>
+                    <span class="old-price" id="product-old-price"></span>
+                </div>
+                <p class="product-short-desc" id="product-desc">Description goes here.</p>
+
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Origin:</span>
+                        <span id="product-origin">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Weight:</span>
+                        <span id="product-weight">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Shelf Life:</span>
+                        <span id="product-shelf">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Certified:</span>
+                        <span>✅ Chemical-Free</span>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="changeQty(-1)">−</button>
+                        <input type="number" id="qty-input" value="1" min="1" max="10">
+                        <button class="qty-btn" onclick="changeQty(1)">+</button>
+                    </div>
+                    <button class="btn btn-primary btn-large" id="add-to-cart-btn">
+                        🛒 Add to Cart
+                    </button>
+                    <button class="btn btn-wishlist">♡</button>
+                </div>
+
+                <div class="product-trust-badges">
+                    <span>🚚 Same-day Delivery</span>
+                    <span>🔄 Easy Returns</span>
+                    <span>🔒 Secure Payment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs-section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="nutrition">Nutrition Info</button>
+                <button class="tab-btn" data-tab="farmer">Meet the Farmer</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+            </div>
+            <div class="tab-content active" id="tab-description">
+                <p id="tab-desc-text">Full product description will appear here.</p>
+            </div>
+            <div class="tab-content" id="tab-nutrition">
+                <table class="nutrition-table">
+                    <tr><td>Serving Size</td><td>100g</td></tr>
+                    <tr><td>Calories</td><td>Varies</td></tr>
+                    <tr><td>Protein</td><td>Natural source</td></tr>
+                    <tr><td>Carbohydrates</td><td>Natural source</td></tr>
+                    <tr><td>Fat</td><td>Natural source</td></tr>
+                    <tr><td>Preservatives</td><td>None</td></tr>
+                </table>
+            </div>
+            <div class="tab-content" id="tab-farmer">
+                <div class="farmer-profile">
+                    <div class="farmer-avatar">
+                        <div class="img-placeholder">👨‍🌾</div>
+                    </div>
+                    <div class="farmer-info">
+                        <h3 id="farmer-name">Farmer Name</h3>
+                        <p id="farmer-location">Location</p>
+                        <p id="farmer-story">Farmer story goes here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-reviews">
+                <div class="reviews-list" id="reviews-list">
+                    <!-- Reviews rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>You May Also Like</h2>
+            <div class="product-grid" id="related-products">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🌿</span>
+                        <span class="logo-text">Purer<span>Plate</span></span>
+                    </a>
+                    <p>Clean eating, delivered honest.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="shop.html?cat=fruits">Seasonal Fruits</a></li>
+                        <li><a href="shop.html?cat=honey">Raw Honey</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <p>📞 <a href="tel:+8801234567890">+880 1234-567890</a></p>
+                    <p>✉️ <a href="mailto:hello@purerplate.com">hello@purerplate.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Purer Plate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
