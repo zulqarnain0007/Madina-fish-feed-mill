@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://madina-fish-feed-mill.github.io/Madina-fish-feed-mill/harvest/sitemap.xml
+Sitemap: https://madinafishfeedmill.com/harvest/sitemap.xml
 
 # Madina Harvest - Natural Farm Products
 # Trishal, Mymensingh, Bangladesh
